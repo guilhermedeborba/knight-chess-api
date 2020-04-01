@@ -4,7 +4,7 @@ import App from './app'
 
 App.listen(Env.port, () => {
   // eslint-disable-next-line no-console
-  console.log('Server started...')
+  console.log(`Server started listening on ${Env.apiBaseUrl}`)
 })
 
 process.on('unhandledRejection', (reason, p) => {

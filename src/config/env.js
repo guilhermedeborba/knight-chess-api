@@ -9,7 +9,7 @@ dotenv.config({ path: currentPath })
 const port = process.env.PORT || 3000
 
 const environmentVariables = {
-  apiBaseUrl: process.env.API_BASE_URL + port,
+  apiBaseUrl: process.env.API_BASE_URL + ':' + port,
   appBaseUrl: process.env.APP_BASE_URL,
   port
 }

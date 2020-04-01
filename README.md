@@ -9,21 +9,24 @@ To run this project you will need to install:
 - [NodeJS](https://nodejs.org/en/) (you can install the LTS version)
 - I recommend you to use the [NVM](https://github.com/creationix/nvm) to install NodeJS.
 
-### Preparing for dev
 
 To run this project, you need to:
 
 **1) Configure the env for the first usage**
 
 - Install the dependencies. `npm install .`
-- Copy `.env` to a `.env.local` file.
-- **Important**: Don't forget to setup the variables on the file 
+- Setup the environment variables on the file `.env`
 
 
 ## Run
 
 - `npm start` - Starts the Express server with logging
-- **Important**: The server would be listen on the host:port that you configured on the `.env.local` 
+- **Important**: The server would be listen on the host:port that you configured on the `.env` 
+```
+APP_BASE_URL=http://localhost:4000
+API_BASE_URL=http://localhost
+PORT=3000
+```
 
 
 ## Available scripts 
