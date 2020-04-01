@@ -6,3 +6,14 @@ App.listen(Env.port, () => {
   // eslint-disable-next-line no-console
   console.log('Server started...')
 })
+
+process.on('unhandledRejection', (reason, p) => {
+  // eslint-disable-next-line no-console
+  console.log({
+    message: 'Unhandled Rejection',
+    data: {
+      reason,
+      p
+    }
+  })
+})
