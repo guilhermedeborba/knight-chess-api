@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest *.test.js",
     "test:tdd": "jest --watch",
+    "test-file": "jest",
     "start": "DEBUG=express:router nodemon --exec node_modules/.bin/babel-node src/server.js"
   },
   "author": "Guilherme Borba",
