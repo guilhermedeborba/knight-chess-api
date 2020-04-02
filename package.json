@@ -4,7 +4,7 @@
   "description": "Knight Chess API to process in Algebraic notation possible knight moves given the initial position.",
   "main": "index.js",
   "scripts": {
-    "test": "jest *.test.js",
+    "test": "jest ./*.test.js",
     "test:tdd": "jest --watch",
     "test-file": "jest",
     "start": "DEBUG=express:router nodemon --exec node_modules/.bin/babel-node src/server.js"
