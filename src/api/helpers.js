@@ -2,11 +2,11 @@ import flatten from 'lodash/flatten'
 import isEmpty from 'lodash/isEmpty'
 import uniq from 'lodash/uniq'
 
+const columns = [, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+
 const isNotEmpty = v => !isEmpty(v)
 
 const isAlgebraicNotation = v => v.match(/[A-H][1-8]/)
-
-const columns = [, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 
 const toAlgebraic = (x, y) => columns[x] + y
 
